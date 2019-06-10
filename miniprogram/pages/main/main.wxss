@@ -1,0 +1,76 @@
+/* miniprogram/pages/main/main.wxss */
+.userinfo {
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.userinfo-avatar:after {
+  border: none;
+}
+
+.userinfo-nickname {
+  font-size: 32rpx;
+  color: #007aff;
+}
+
+.scroll_container {
+  height: 100%;
+  width: 100%;
+  padding: 10rpx;
+  display: flex;
+  box-sizing: border-box;
+}
+.main_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.item_container {
+  width: 360rpx;
+  display: flex;
+  margin-bottom: 10rpx;
+  flex-direction: column;
+}
+.item_container .cover {
+  width: 360rpx;
+  height: 480rpx;
+  padding: 0;
+}
+.item_container .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5rpx;
+}
+.item_container .bottom {
+  flex-direction: column;
+  display: flex;
+  height: 140rpx;
+}
+.item_container .bottom .title {
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.item_container .bottom .description {
+  font-size: 20rpx;
+  margin-top: 5rpx;
+  flex: 1;
+}
+.item_container .bottom .price {
+  font-size: 20rpx;
+  margin-top: 5rpx;
+  color: #007aff;
+}

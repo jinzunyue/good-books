@@ -1,0 +1,39 @@
+<!--miniprogram/pages/main/main.wxml-->
+<view>
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button 
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view>
+      <button class="userinfo-nickname">{{nickname}}</button>
+    </view>
+  </view>
+
+  <scroll-view
+    scroll-y
+    scroll-x=false
+    class='scroll_container'
+  >
+  <view class='main_content'>
+    <view class='item_container' wx:for="{{books}}">
+    <button 
+      bindtap='previewAllImg'
+      data-imgs='{{item.imgs}}'
+      class="cover"
+    >
+      <image 
+        class='img'
+        src='{{item.imgs[0]}}' 
+      />
+    </button>
+    <view class='bottom'>
+      <text class='title'>{{item.title}}</text>
+      <text class='description'>{{item.description}}</text>
+      <text class='price'>{{item.price}} RMB</text>
+    </view>
+  </view>
+  </view>   
+  </scroll-view>
+</view>
